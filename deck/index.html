@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #303030;
+}
+
+body {
+  position: absolute;
+  width: 95vw;
+  height: calc(100vh - 5vw);
+  top: 2.5vw;
+  left: 2.5vw;
+}
+
+.mainSwiper {
+  margin-bottom: 2.5vw;
+  width: 100%;
+  height: calc(75% - 2.5vw);
+}
+
+.thumbSwiper {
+  width: 100%;
+  height: 25%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbSwiper .swiper-slide {
+  width: calc((100% - 120px)/5.6);
+  height: 100%;
+  opacity: 0.25;
+  transition: opacity 0.25s;
+}
+
+.thumbSwiper .swiper-slide:hover {
+  opacity: 0.5;
+}
+
+.thumbSwiper .swiper-slide-thumb-active, .thumbSwiper .swiper-slide-thumb-active:hover {
+  opacity: 1;
+}
+
+.swiper-slide img, .swiper-slide video {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.thumbSwiper img, .thumbSwiper video {
+  border-radius: 15px;
+}
+
+.mainSwiper img, .mainSwiper video {
+  border-radius: 23px;
+}
+</style>
+</head>
+<body>
+<div class="swiper mainSwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="slides/01.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="slides/01A.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="slides/02.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="slides/03.webp" />
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/04.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/05.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/06.mp4" autoplay loop muted playsinline></video>
+      <img src="assets/16x9.png" usemap="#clickable-6" class="click_map" />
+      <map name="clickable-6">
+        <area shape="poly" coords="1269 97, 1810 97, 1814 1048, 1269 1037" href="https://www.instagram.com/reel/C1EfpwPLA5r" target="_blank" alt="Fit Check Trailer | Prime Video">
+      </map>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/07.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/08.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/09.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/10.mp4" autoplay loop muted playsinline></video>
+      <img src="assets/16x9.png" usemap="#clickable-10" class="click_map" />
+      <map name="clickable-10">
+        <area shape="poly" coords="663  99,  960 396, 663  693, 366 396" href="https://youtu.be/2j-oMtdjXWU" target="_blank" alt="Fit Check Trailer | Prime Video">
+        <area shape="poly" coords="343 419,  640 716, 343 1013,  46 716" href="https://youtu.be/wdDKLeKiFaU" target="_blank" alt="Kingdom | Teaser [HD] | Netflix">
+        <area shape="poly" coords="983 419, 1280 716, 983 1013, 686 716" href="https://youtu.be/SYDB6skUqYw" target="_blank" alt="Transformers: War For Cybertron Trilogy: Siege | New York Toy Fair | Netflix">
+      </map>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/11.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <img src="slides/12A.webp" />
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/12.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/13_NoWatch.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/14.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="slides/15.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="swiper-slide">
+      <img src="slides/16.webp" />
+    </div>
+  </div>
+
+  <!-- div class="swiper-pagination"></div -->
+
+  <!-- If we need navigation buttons -->
+  <!-- div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div -->
+
+  <!-- If we need scrollbar -->
+  <!-- div class="swiper-scrollbar"></div -->
+</div>
+
+<div class="swiper thumbSwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="thumbnails/01.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/01A.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/02.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/03.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/04.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/05.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/06.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/07.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/08.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/09.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/10.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/11.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/12A.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/12.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/13.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/14.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/15.webp" />
+    </div>
+    <div class="swiper-slide">
+      <img src="thumbnails/16.webp" />
+    </div>
+  </div>
+</div>
+<script src="assets/swiper-bundle.min.js"></script>
+<script src="assets/imageMapResizer.min.js"></script>
+
+<script>
+var thumbSwiper = new Swiper('.thumbSwiper', {
+  lazy: true,
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  keyboard: true,
+  mousewheel: true,
+
+  /* pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }, */
+});
+
+var mainSwiper = new Swiper(".mainSwiper", {
+  lazy: true,
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 120,
+  keyboard: true,
+  mousewheel: true,
+  loop: false,
+  thumbs: {
+    swiper: thumbSwiper,
+  },
+
+  /* pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }, */
+});
+
+imageMapResize();
+
+</script>
+</body>
+</html>
